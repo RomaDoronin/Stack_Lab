@@ -1,56 +1,19 @@
-﻿Построение начато 03.11.2015 3:32:05.
+﻿Построение начато 10.11.2015 0:43:12.
      1>Проект "c:\documents\visual studio 2010\Projects\Memory_Stack\Memory_Stack\Memory_Stack.vcxproj" в узле 2 (целевые объекты build).
      1>InitializeBuildStatus:
-         Создание "Debug\Memory_Stack.unsuccessfulbuild", так как было задано "AlwaysCreate".
+         Обращение к "Debug\Memory_Stack.unsuccessfulbuild".
        ClCompile:
          Для всех выходных данных обновления не требуется.
-         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"StdAfx.h" /Fp"Debug\Memory_Stack.pch" /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt TStack.cpp
-         TStack.cpp
-     1>c:\documents\visual studio 2010\projects\memory_stack\memory_stack\tstack.cpp(5): error C2955: TStack: для использования класса шаблон требуется список аргументов шаблон
-                 c:\documents\visual studio 2010\projects\memory_stack\memory_stack\tstack.h(4): см. объявление "TStack"
-     1>c:\documents\visual studio 2010\projects\memory_stack\memory_stack\tstack.cpp(5): error C2955: TStack: для использования класса шаблон требуется список аргументов шаблон
-                 c:\documents\visual studio 2010\projects\memory_stack\memory_stack\tstack.h(4): см. объявление "TStack"
-     1>c:\documents\visual studio 2010\projects\memory_stack\memory_stack\tstack.cpp(5): error C2143: синтаксическая ошибка: отсутствие ";" перед "&"
-     1>c:\documents\visual studio 2010\projects\memory_stack\memory_stack\tstack.cpp(5): error C2761: {ctor}: повторное объявление функции не разрешается
-     1>c:\documents\visual studio 2010\projects\memory_stack\memory_stack\tstack.cpp(6): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
-     1>c:\documents\visual studio 2010\projects\memory_stack\memory_stack\tstack.cpp(6): error C2801: "operator =" не должен быть статическим членом
-     1>c:\documents\visual studio 2010\projects\memory_stack\memory_stack\tstack.cpp(7): error C2065: MaxSize: необъявленный идентификатор
-     1>c:\documents\visual studio 2010\projects\memory_stack\memory_stack\tstack.cpp(9): error C2065: mas: необъявленный идентификатор
-     1>c:\documents\visual studio 2010\projects\memory_stack\memory_stack\tstack.cpp(9): error C2541: delete: нельзя удалять объекты, не являющиеся указателями
-     1>c:\documents\visual studio 2010\projects\memory_stack\memory_stack\tstack.cpp(10): error C2065: MaxSize: необъявленный идентификатор
-     1>c:\documents\visual studio 2010\projects\memory_stack\memory_stack\tstack.cpp(11): error C2065: mas: необъявленный идентификатор
-     1>c:\documents\visual studio 2010\projects\memory_stack\memory_stack\tstack.cpp(11): error C2061: синтаксическая ошибка: идентификатор "T"
-     1>c:\documents\visual studio 2010\projects\memory_stack\memory_stack\tstack.cpp(13): error C2065: Index: необъявленный идентификатор
-     1>c:\documents\visual studio 2010\projects\memory_stack\memory_stack\tstack.cpp(14): error C2065: Index: необъявленный идентификатор
-     1>c:\documents\visual studio 2010\projects\memory_stack\memory_stack\tstack.cpp(15): error C2065: mas: необъявленный идентификатор
-     1>c:\documents\visual studio 2010\projects\memory_stack\memory_stack\tstack.cpp(16): error C2355: this: может указываться только в нестатических членах-функциях
-     1>c:\documents\visual studio 2010\projects\memory_stack\memory_stack\tstack.cpp(17): error C2143: синтаксическая ошибка: отсутствие ";" перед "}"
-     1>c:\documents\visual studio 2010\projects\memory_stack\memory_stack\tstack.cpp(19): error C2955: TStack: для использования класса шаблон требуется список аргументов шаблон
-                 c:\documents\visual studio 2010\projects\memory_stack\memory_stack\tstack.h(4): см. объявление "TStack"
-     1>c:\documents\visual studio 2010\projects\memory_stack\memory_stack\tstack.cpp(19): error C2509: IsEmpty: функция-член не объявлена в "TStack"
-                 c:\documents\visual studio 2010\projects\memory_stack\memory_stack\tstack.h(4): см. объявление "TStack"
-     1>c:\documents\visual studio 2010\projects\memory_stack\memory_stack\tstack.cpp(21): error C2955: TStack: для использования класса шаблон требуется список аргументов шаблон
-                 c:\documents\visual studio 2010\projects\memory_stack\memory_stack\tstack.h(4): см. объявление "TStack"
-     1>c:\documents\visual studio 2010\projects\memory_stack\memory_stack\tstack.cpp(21): error C2509: IsFull: функция-член не объявлена в "TStack"
-                 c:\documents\visual studio 2010\projects\memory_stack\memory_stack\tstack.h(4): см. объявление "TStack"
-     1>c:\documents\visual studio 2010\projects\memory_stack\memory_stack\tstack.cpp(23): error C2955: TStack: для использования класса шаблон требуется список аргументов шаблон
-                 c:\documents\visual studio 2010\projects\memory_stack\memory_stack\tstack.h(4): см. объявление "TStack"
-     1>c:\documents\visual studio 2010\projects\memory_stack\memory_stack\tstack.cpp(24): error C2509: TTop: функция-член не объявлена в "TStack"
-                 c:\documents\visual studio 2010\projects\memory_stack\memory_stack\tstack.h(4): см. объявление "TStack"
-     1>c:\documents\visual studio 2010\projects\memory_stack\memory_stack\tstack.cpp(29): error C2955: TStack: для использования класса шаблон требуется список аргументов шаблон
-                 c:\documents\visual studio 2010\projects\memory_stack\memory_stack\tstack.h(4): см. объявление "TStack"
-     1>c:\documents\visual studio 2010\projects\memory_stack\memory_stack\tstack.cpp(29): error C2143: синтаксическая ошибка: отсутствие ";" перед "TStack<T>::TPop"
-     1>c:\documents\visual studio 2010\projects\memory_stack\memory_stack\tstack.cpp(29): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
-     1>c:\documents\visual studio 2010\projects\memory_stack\memory_stack\tstack.cpp(30): error C2509: TPop: функция-член не объявлена в "TStack"
-                 c:\documents\visual studio 2010\projects\memory_stack\memory_stack\tstack.h(4): см. объявление "TStack"
-     1>c:\documents\visual studio 2010\projects\memory_stack\memory_stack\tstack.cpp(37): error C2955: TStack: для использования класса шаблон требуется список аргументов шаблон
-                 c:\documents\visual studio 2010\projects\memory_stack\memory_stack\tstack.h(4): см. объявление "TStack"
-     1>c:\documents\visual studio 2010\projects\memory_stack\memory_stack\tstack.cpp(37): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
-     1>c:\documents\visual studio 2010\projects\memory_stack\memory_stack\tstack.cpp(37): error C2143: синтаксическая ошибка: отсутствие "," перед "&"
-     1>c:\documents\visual studio 2010\projects\memory_stack\memory_stack\tstack.cpp(38): error C2509: TPash: функция-член не объявлена в "TStack"
-                 c:\documents\visual studio 2010\projects\memory_stack\memory_stack\tstack.h(4): см. объявление "TStack"
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"StdAfx.h" /Fp"Debug\Memory_Stack.pch" /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt TParser.cpp
+         TParser.cpp
+     1>c:\documents\visual studio 2010\projects\memory_stack\memory_stack\tparser.h(21): error C2664: strcpy: невозможно преобразовать параметр 1 из "char *[201]" в "char *"
+                 Типы, на которые указывают указатели, не связаны; для преобразования требуется reinterpret_cast, приведение в стиле С или приведение в стиле функции
+     1>c:\documents\visual studio 2010\projects\memory_stack\memory_stack\tparser.h(39): error C2065: default: необъявленный идентификатор
+     1>c:\documents\visual studio 2010\projects\memory_stack\memory_stack\tparser.h(39): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "n"
+     1>c:\documents\visual studio 2010\projects\memory_stack\memory_stack\tparser.cpp(6): error C2511: TParser::TParser(void): перегруженная функция-член не найдена в "TParser"
+                 c:\documents\visual studio 2010\projects\memory_stack\memory_stack\tparser.h(10): см. объявление "TParser"
      1>Построение проекта "c:\documents\visual studio 2010\Projects\Memory_Stack\Memory_Stack\Memory_Stack.vcxproj" завершено (целевые объекты build) с ошибкой.
 
 СБОЙ построения.
 
-Затраченное время: 00:00:00.77
+Затраченное время: 00:00:00.16
