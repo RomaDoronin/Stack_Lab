@@ -1,19 +1,14 @@
-﻿Построение начато 10.11.2015 0:43:12.
-     1>Проект "c:\documents\visual studio 2010\Projects\Memory_Stack\Memory_Stack\Memory_Stack.vcxproj" в узле 2 (целевые объекты build).
+﻿Build started 11/10/2015 8:48:09 AM.
+     1>Project "Z:\STACK\Stack_Lab-master\Memory_Stack\Memory_Stack.vcxproj" on node 2 (build target(s)).
      1>InitializeBuildStatus:
-         Обращение к "Debug\Memory_Stack.unsuccessfulbuild".
+         Touching "Debug\Memory_Stack.unsuccessfulbuild".
        ClCompile:
-         Для всех выходных данных обновления не требуется.
-         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"StdAfx.h" /Fp"Debug\Memory_Stack.pch" /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt TParser.cpp
+         All outputs are up-to-date.
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"StdAfx.h" /Fp"Debug\Memory_Stack.pch" /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt TParser.cpp
          TParser.cpp
-     1>c:\documents\visual studio 2010\projects\memory_stack\memory_stack\tparser.h(21): error C2664: strcpy: невозможно преобразовать параметр 1 из "char *[201]" в "char *"
-                 Типы, на которые указывают указатели, не связаны; для преобразования требуется reinterpret_cast, приведение в стиле С или приведение в стиле функции
-     1>c:\documents\visual studio 2010\projects\memory_stack\memory_stack\tparser.h(39): error C2065: default: необъявленный идентификатор
-     1>c:\documents\visual studio 2010\projects\memory_stack\memory_stack\tparser.h(39): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "n"
-     1>c:\documents\visual studio 2010\projects\memory_stack\memory_stack\tparser.cpp(6): error C2511: TParser::TParser(void): перегруженная функция-член не найдена в "TParser"
-                 c:\documents\visual studio 2010\projects\memory_stack\memory_stack\tparser.h(10): см. объявление "TParser"
-     1>Построение проекта "c:\documents\visual studio 2010\Projects\Memory_Stack\Memory_Stack\Memory_Stack.vcxproj" завершено (целевые объекты build) с ошибкой.
+     1>z:\stack\stack_lab-master\memory_stack\tparser.cpp(3): fatal error C1075: end of file found before the left brace '{' at 'z:\stack\stack_lab-master\memory_stack\tparser.h(53)' was matched
+     1>Done Building Project "Z:\STACK\Stack_Lab-master\Memory_Stack\Memory_Stack.vcxproj" (build target(s)) -- FAILED.
 
-СБОЙ построения.
+Build FAILED.
 
-Затраченное время: 00:00:00.16
+Time Elapsed 00:00:13.59

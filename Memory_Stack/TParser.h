@@ -8,8 +8,8 @@
 
 class TParser
 {
-	char* inf[MaxLen];
-	char* post[MaxLen];
+	char inf[MaxLen];
+	char post[MaxLen];
 	TStack <double> st_d;
 	TStack <char> st_c;
 
@@ -36,7 +36,7 @@ public:
 		case '*': n=2; break;
 		case '/': n=2; break;
 		case '^': n=3; break;
-		default n=-1;
+		default: n=-1;
 		}
 		return(n);
 	}
@@ -48,22 +48,28 @@ public:
 
 	void inftopost()
 	{
-		int i=0;
+		int i=0,j;
 		while(inf[i] != '\0')
 		{
-			if ((inf[i] != "+") || (inf[i] != "-") || (inf[i] != "*") || (inf[i] != "/") || (inf[i] != "^"))
-		    post[i] = inf[i];
+			if ((inf[i] != '+') || (inf[i] != '-') || (inf[i] != '*') || (inf[i] != '/') || (inf[i] != '^'))
+			{ post[i] = inf[i]; i++; }
 			else
 			{
-				if ((Priority(inf[i]) > Priority(st_c.TTop)) && (st_c.RetInt() != -1))
-				   st_c.TPush(inf[i]);
-				else
+				while((j=1) || (st_c.RetInt() != -1))
 				{
-					post[i] = inf[i];
-					st_c.TPop();
+				    if (( Priority(inf[i]) > Priority(st_c.TTop()) ) || (st_c.RetInt() = -1))
+						{st_c.TPush(inf[i]); j=1;}
+				    else
+					    ( ( Priority(inf[i]) < Priority(st_c.TTop()) ) || ( Priority(inf[i]) = Priority(st_c.TTop()) ) )
+				        {
+ 					        post[i] = st_c.TTop();
+					        st_c.TPop();
+					        i++;
+				        }
 				}
+			}
+		}
+	}
 
-
-            i++;
 };
 
