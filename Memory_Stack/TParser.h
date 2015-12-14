@@ -3,7 +3,7 @@
 #define MaxLen 201
 
 #include "TStack.h"
-#include <string.h>
+#include "string.h"
 
 
 class TParser
@@ -19,26 +19,27 @@ public:
 	{
 		if (s==NULL) inf[0] = '\0';
 		else strcpy(inf,s);
+		st_c.TPush(')');
 	}
 
 	//Деструктор
 	~TParser();
 
-	int Priority(char ch)
+	int Priority(char sign)
 	{
-		int n;
-		switch(ch)
+		int Pr;
+		switch(sign)
 		{
-		case '(': n=0; break;
-		case ')': n=0; break;
-		case '+': n=1; break;
-		case '-': n=1; break;
-		case '*': n=2; break;
-		case '/': n=2; break;
-		case '^': n=3; break;
-		default: n=-1;
+		case '(': Pr=0; break;
+		case ')': Pr=0; break;
+		case '+': Pr=1; break;
+		case '-': Pr=1; break;
+		case '*': Pr=2; break;
+		case '/': Pr=2; break;
+		case '^': Pr=3; break;
+		default: Pr=-1;
 		}
-		return(n);
+		return(Pr);
 	}
 
 
@@ -48,26 +49,32 @@ public:
 
 	void inftopost()
 	{
-		int i=0,j;
+		int i=0,j=0;
 		while(inf[i] != '\0')
 		{
-			if ((inf[i] != '+') || (inf[i] != '-') || (inf[i] != '*') || (inf[i] != '/') || (inf[i] != '^'))
-			{ post[i] = inf[i]; i++; }
+			if ((inf[i] != '+') || (inf[i] != '-') || (inf[i] != '*') || (inf[i] != '/') || (inf[i] != '^') || (inf[i] != '(') || (inf[i] != ')'))
+			{ post[j] = inf[i]; j++; }
 			else
 			{
-				while((j=1) || (st_c.RetInt() != -1))
+				while(st_c.RetInt() != -1)
 				{
-				    if (( Priority(inf[i]) > Priority(st_c.TTop()) ) || (st_c.RetInt() = -1))
-						{st_c.TPush(inf[i]); j=1;}
+				    if ( Priority(inf[i]) > Priority(st_c.TTop()) )
+						{st_c.TPush(inf[i]); break;}
 				    else
-					    ( ( Priority(inf[i]) < Priority(st_c.TTop()) ) || ( Priority(inf[i]) = Priority(st_c.TTop()) ) )
 				        {
- 					        post[i] = st_c.TTop();
+ 					        post[j] = st_c.TTop();
+							j++;
 					        st_c.TPop();
-					        i++;
 				        }
 				}
 			}
+			i++;
+		}
+		while (st_c.TTop() == ')')
+		{
+			post[j] = st_c.TTop();
+			j++;
+			st_c.TPop();
 		}
 	}
 

@@ -46,6 +46,7 @@ public:
 		    mas[i]=S.mas[i];
 	    return *this
     }
+
 	int TStack::RetInt() {return Index;}
 	//Функция опустошающая Стек
     bool TStack::IsEmpty() {return Index = -1;}
@@ -57,13 +58,13 @@ public:
     T TStack::TTop()
     {
 	    if (Index=-1) throw Index;
-	    return mas[index];
+	    return mas[Index];
     }
 
 	//Функция выбрасывающая элемент из Стека
     T TStack::TPop()
     {
-	    if Index = -1 throw Index;
+//	    if Index = -1 throw Index;
 	    T tmp = mas[Index];
 	    Index--;
 	    return tmp;
